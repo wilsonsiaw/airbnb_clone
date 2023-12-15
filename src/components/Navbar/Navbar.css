@@ -1,0 +1,31 @@
+@media screen and (max-width: 767px) {
+    
+    nav {
+        height: 70px;
+        box-shadow: 0px 4px 8px lightgrey;
+        display: flex;
+        padding: 20px 30px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    nav {
+        height: 70px;
+        box-shadow: 0px 4px 8px lightgrey;
+        display: flex;
+        padding: 20px 30px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    nav {
+        height: 90px;
+        box-shadow: 0px 4px 8px lightgrey;
+        display: flex;
+        padding: 20px 30px;
+    }
+}
