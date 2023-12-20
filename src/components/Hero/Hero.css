@@ -7,14 +7,20 @@
     }
 
     .photoGrid img {
-        width: 350px;
+        width: 90%;
+    }
+
+    .mainContent {
+        width: 90%;
     }
 
     .mainContent h1 {
         font-family: 'Poppins', sans-serif;
-        font-size: 36px;
+        font-size: 26px;
         font-weight: 600;
         padding: 30px 30px;
+        text-align: center;
+        margin-left: 25px;
     }
 
     .mainContent p {
@@ -24,6 +30,7 @@
         max-width: 400px;
         padding-left: 30px;
         margin-top: -20px;
+        text-align: center;
     }
 }
 
@@ -32,11 +39,10 @@
         display: flex;
         justify-content: center;
         margin-top: 35px;
-        /* margin-bottom: 35px; */
     }
 
     .photoGrid img {
-        width: 550px;
+        width: 90%;
     }
 
     .mainContent h1 {
@@ -65,7 +71,11 @@
     }
 
     .photoGrid img {
-        width: 1000px;
+        width: 85%;
+    }
+
+    .mainContent {
+        margin-top: 10px;
     }
 
     .mainContent h1 {
