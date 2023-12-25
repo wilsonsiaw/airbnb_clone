@@ -7,8 +7,10 @@ const Card = () => {
   return (
     <section className='cardWrapper'>
       <div className='photo'>
+        <div className="soldOutOverlay">
+          <h4>SOLD OUT</h4>
+        </div>
         <img src={photo} alt="A photo of Katie Zaferes smiling" />
-        <h4>SOLD OUT</h4>
       </div>
       <div className='cardContent'>
         <div className='rating'>
