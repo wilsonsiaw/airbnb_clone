@@ -2,12 +2,14 @@
 
    .cardWrapper {
     margin-top: 20px;
+    position: relative;
    }
 
    .photo {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
    }
 
    .photo img {
@@ -16,17 +18,25 @@
     border-radius: 5px;
    }
 
-   .photo > h4 {
+   .soldOutOverlay {
+    position: absolute;
+    top: 3%;
+    left: 22%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+   }
+
+   .soldOutOverlay h4 {
+    margin: 0;
+    font-size: 0.8rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 3vw;
-    padding: 5px;
     background-color: #fff;
-    border-radius: 4px;
-    
-    position: absolute;
-    left: 22%;
-    bottom: 31%;
+    padding: 4px;
+    border-radius: 3px;
    }
 
    .cardContent {
@@ -66,15 +76,14 @@
     font-size: 1rem;
    }
 
-   #para1 {
+   #para1,
+   #para2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 300;
    }
 
    #para2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
     font-weight: 600;
    }
 
@@ -89,10 +98,12 @@
 
     .cardWrapper {
         margin-top: 20px;
+        position: relative;
     }
 
     .photo {
         margin-left: 30px;
+        position: relative;
     }
     
     .photo img {
@@ -100,18 +111,25 @@
         height: 40%;
         border-radius: 5px;
     }
+
+    .soldOutOverlay {
+        position: absolute;
+        top: 3%;
+        left: 1.5%;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+       }
     
-    .photo > h4 {
+       .soldOutOverlay h4 {
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
         font-size: 2vw;
         padding: 5px;
         background-color: #fff;
         border-radius: 4px;
-        
-        position: absolute;
-        left: 5%;
-        bottom: 3%;
     }
     
     .cardContent {
@@ -151,15 +169,14 @@
         font-size: 1rem;
     }
     
-    #para1 {
+    #para1,
+    #para2 {
         font-family: 'Poppins', sans-serif;
         font-size: 1rem;
         font-weight: 300;
     }
     
     #para2 {
-        font-family: 'Poppins', sans-serif;
-        font-size: 1rem;
         font-weight: 600;
     }
     
@@ -174,10 +191,12 @@
 
     .cardWrapper {
         margin-top: 20px;
+        position: relative;
     }
 
     .photo {
         margin-left: 30px;
+        position: relative;
     }
 
     .photo img {
@@ -186,17 +205,24 @@
         border-radius: 5px;
     }
 
-    .photo > h4 {
+    .soldOutOverlay {
+        position: absolute;
+        top: 3%;
+        left: 0.8%;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+       }
+
+    .soldOutOverlay h4 {
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
-        font-size: 1vw;
+        font-size: 1rem;
         padding: 5px;
         background-color: #fff;
         border-radius: 4px;
-        
-        position: absolute;
-        left: 2.5%;
-        bottom: -48%;
     }
 
     .cardContent {
@@ -237,15 +263,14 @@
         font-size: 1.2rem;
     }
 
-    #para1 {
+    #para1,
+    #para2 {
         font-family: 'Poppins', sans-serif;
         font-size: 1.2rem;
         font-weight: 300;
     }
 
     #para2 {
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.2rem;
         font-weight: 600;
     }
 
