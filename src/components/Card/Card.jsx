@@ -16,7 +16,7 @@ const Card = (props) => {
         <div className='rating'>
             <img src={star} alt="A red ratings star" />
             <p>{props.rating}</p>
-            <p>{props.reviewCount}</p>
+            <p>({props.reviewCount})</p>
             <p>{props.country}</p>
         </div>
         <p id='para1'>{props.title}</p>
