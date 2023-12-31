@@ -1,282 +1,204 @@
 @media screen and (max-width: 767px) {
+    .cards-list {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 30px;
+        overflow-x: auto;
 
-   .cardWrapper {
-    margin-top: 20px;
-    position: relative;
-   }
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 
-   .photo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-   }
+    .card {
+        width: 70%;
+        font-size: 15px;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+    }
 
-   .photo img {
-    width: 60%;
-    height: 60%;
-    border-radius: 5px;
-   }
+    .card-image {
+        width: 100%;
+        border-radius: 9px;
+        margin-bottom: 9px;
+    }
 
-   .soldOutOverlay {
-    position: absolute;
-    top: 3%;
-    left: 22%;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-   }
+    .card-title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 
-   .soldOutOverlay h4 {
-    margin: 0;
-    font-size: 0.8rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    background-color: #fff;
-    padding: 4px;
-    border-radius: 3px;
-   }
+    .card-stats {
+        display: flex;
+        align-items: center;
 
-   .cardContent {
-    margin-top: 8px;
-    margin-left: 20%;
-    line-height: 25px;
-   }
+        font-family: 'Poppins', sans-serif;
+        color: #222;
+        font-weight: 300;
+    }
 
-   .rating {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-   }
+    .card-stats span {
+        margin-right: 5px;
+    }
 
-   .rating img {
-    width: 15px;
-    height: 15px;
-   }
+    .card-stats span:nth-last-of-type(2),
+    .card-stats span:nth-last-of-type(1) {
+        color: #918E9B;
+        font-weight: 300;
+    }
 
-   .rating p:nth-last-child(3) {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-   }
+    .card-star {
+        height: 15px;
+        margin-right: 5px;
+    }
 
-   .rating p:nth-last-child(2) {
-    color: #918E9B;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-   }
+    .card-price {
+        margin-top: auto;
+    }
 
-   .rating p:nth-last-child(1) {
-    color: #918E9B;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-   }
+    p {
+        font-weight: 300;
+    }
 
-   #para1,
-   #para2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    font-weight: 300;
-   }
-
-   #para2 {
-    font-weight: 600;
-   }
-
-   #para2 span {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    font-weight: 300;
-   }
+    .bold {
+        font-weight: 600;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-
-    .cardWrapper {
-        margin-top: 20px;
-        position: relative;
-    }
-
-    .photo {
-        margin-left: 30px;
-        position: relative;
-    }
-    
-    .photo img {
-        width: 40%;
-        height: 40%;
-        border-radius: 5px;
-    }
-
-    .soldOutOverlay {
-        position: absolute;
-        top: 3%;
-        left: 1.5%;
-        right: 0;
-        bottom: 0;
+    .cards-list {
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-       }
-    
-       .soldOutOverlay h4 {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 500;
-        font-size: 2vw;
-        padding: 5px;
-        background-color: #fff;
-        border-radius: 4px;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 30px;
+        overflow-x: auto;
+
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
-    
-    .cardContent {
-        margin-top: 8px;
-        margin-left: 4%;
-        line-height: 25px;
-    }
-    
-    .rating {
+
+    .card {
+        width: 28%;
+        font-size: 16px;
         display: flex;
-        gap: 5px;
+        flex: 0 0 auto;
+        flex-direction: column;
+    }
+
+    .card-image {
+        width: 100%;
+        border-radius: 9px;
+        margin-bottom: 9px;
+    }
+
+    .card-title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .card-stats {
+        display: flex;
         align-items: center;
+
+        font-family: 'Poppins', sans-serif;
+        color: #222;
+        font-weight: 300;
     }
-    
-    .rating img {
-        width: 15px;
+
+    .card-stats span {
+        margin-right: 5px;
+    }
+
+    .card-stats span:nth-last-of-type(2),
+    .card-stats span:nth-last-of-type(1) {
+        color: #918E9B;
+        font-weight: 300;
+    }
+
+    .card-star {
         height: 15px;
+        margin-right: 5px;
     }
-    
-    .rating p:nth-last-child(3) {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 300;
-        font-size: 1rem;
+
+    .card-price {
+        margin-top: auto;
     }
-    
-    .rating p:nth-last-child(2) {
-        color: #918E9B;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 300;
-        font-size: 1rem;
-    }
-    
-    .rating p:nth-last-child(1) {
-        color: #918E9B;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 300;
-        font-size: 1rem;
-    }
-    
-    #para1,
-    #para2 {
-        font-family: 'Poppins', sans-serif;
-        font-size: 1rem;
+
+    p {
         font-weight: 300;
     }
-    
-    #para2 {
+
+    .bold {
         font-weight: 600;
-    }
-    
-    #para2 span {
-        font-family: 'Poppins', sans-serif;
-        font-size: 1rem;
-        font-weight: 300;
     }
 }
 
 @media screen and (min-width: 1024px) {
-
-    .cardWrapper {
-        margin-top: 20px;
-        position: relative;
-    }
-
-    .photo {
-        margin-left: 30px;
-        position: relative;
-    }
-
-    .photo img {
-        width: 20%;
-        height: 30%;
-        border-radius: 5px;
-    }
-
-    .soldOutOverlay {
-        position: absolute;
-        top: 3%;
-        left: 0.8%;
-        right: 0;
-        bottom: 0;
+    .cards-list {
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-       }
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 80px;
+        overflow-x: auto;
 
-    .soldOutOverlay h4 {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 500;
-        font-size: 1rem;
-        padding: 5px;
-        background-color: #fff;
-        border-radius: 4px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
-    .cardContent {
+    .card {
         width: 20%;
-        margin-top: 8px;
-        margin-left: 1.5%;
-        line-height: 25px;
+        font-size: 18px;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
     }
 
-    .rating {
+    .card-image {
+        width: 100%;
+        border-radius: 9px;
+        margin-bottom: 9px;
+    }
+
+    .card-title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .card-stats {
         display: flex;
-        gap: 5px;
         align-items: center;
-    }
 
-    .rating img {
-        width: 20px;
-        height: 20px;
-    }
-
-    .rating p:nth-last-child(3) {
         font-family: 'Poppins', sans-serif;
+        color: #222;
         font-weight: 300;
-        font-size: 1.2rem;
     }
 
-    .rating p:nth-last-child(2) {
+    .card-stats span {
+        margin-right: 5px;
+    }
+
+    .card-stats span:nth-last-of-type(2),
+    .card-stats span:nth-last-of-type(1) {
         color: #918E9B;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 300;
-        font-size: 1.2rem;
-    }
-
-    .rating p:nth-last-child(1) {
-        color: #918E9B;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 300;
-        font-size: 1.2rem;
-    }
-
-    #para1,
-    #para2 {
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.2rem;
         font-weight: 300;
     }
 
-    #para2 {
+    .card-star {
+        height: 15px;
+        margin-right: 5px;
+    }
+
+    .card-price {
+        margin-top: auto;
+    }
+
+    p {
+        font-weight: 300;
+    }
+
+    .bold {
         font-weight: 600;
-    }
-
-    #para2 span {
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.2rem;
-        font-weight: 300;
     }
 }
