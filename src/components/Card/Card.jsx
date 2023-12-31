@@ -1,28 +1,20 @@
 import React from 'react'
 import './Card.css'
-// import photo from '../../assets/katie-zaferes.png'
 import star from '../../assets/star.png'
 
 const Card = (props) => {
   return (
-    <section className='cardWrapper'>
-      <div className='photo'>
-        <div className="soldOutOverlay">
-          <h4>SOLD OUT</h4>
-        </div>
-        <img src={props.img} alt="A photo of Katie Zaferes smiling" />
+    <div className='card'>
+      <img src={props.img} className='card-image' />
+      <div className='card-stats'>
+          <img src={star} alt="A red ratings star" className='card-star'/>
+          <span>{props.rating}</span>
+          <span className='gray'>({props.reviewCount}) • </span>
+          <span className='gray'>{props.country}</span>
       </div>
-      <div className='cardContent'>
-        <div className='rating'>
-            <img src={star} alt="A red ratings star" />
-            <p>{props.rating}</p>
-            <p>({props.reviewCount})</p>
-            <p>{props.country}</p>
-        </div>
-        <p id='para1'>{props.title}</p>
-        <p id='para2'>From {props.price} / <span>person</span></p>
-      </div>
-    </section>
+      <p className='card-title'>{props.title}</p>
+      <p className='card-price'><span className='bold'>From {props.price}</span> / person</p>
+    </div>
   )
 }
 
