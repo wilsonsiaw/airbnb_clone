@@ -17,6 +17,7 @@
         display: flex;
         flex: 0 0 auto;
         flex-direction: column;
+        position: relative;
     }
 
     .card-image {
@@ -64,6 +65,16 @@
 
     .bold {
         font-weight: 600;
+    }
+
+    .card-badge {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        background-color: #fff;
+        padding: 5px 7px;
+        border-radius: 2px;
+        font-weight: bold;
     }
 }
 
@@ -85,6 +96,7 @@
         display: flex;
         flex: 0 0 auto;
         flex-direction: column;
+        position: relative;
     }
 
     .card-image {
@@ -132,6 +144,16 @@
 
     .bold {
         font-weight: 600;
+    }
+
+    .card-badge {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        background-color: #fff;
+        padding: 5px 7px;
+        border-radius: 2px;
+        font-weight: bold;
     }
 }
 
@@ -153,6 +175,7 @@
         display: flex;
         flex: 0 0 auto;
         flex-direction: column;
+        position: relative;
     }
 
     .card-image {
@@ -200,5 +223,15 @@
 
     .bold {
         font-weight: 600;
+    }
+
+    .card-badge {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        background-color: #fff;
+        padding: 5px 7px;
+        border-radius: 2px;
+        font-weight: bold;
     }
 }
